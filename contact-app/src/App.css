@@ -1,0 +1,93 @@
+:root {
+    --text: #120202;
+    --secondary: #186f88;
+}
+
+.App {
+    text-align: center;
+}
+
+body {
+    background: rgb(250, 237, 241);
+    background: linear-gradient(140deg, rgba(250, 237, 241, 1) 0%, rgba(251, 247, 254, 1) 100%);
+    font-family: 'Montserrat';
+    letter-spacing:2px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    background-color: #4ea6ff;
+    background-image: linear-gradient(62deg, #dae4f0 0%, #fefdff 100%);
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 100%;
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 5px 5px 15px 5px #cacaca;    
+}
+
+.nav-item {
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 0 2px var(--text);
+    transition: all 0.4s ease-in-out;
+    transform: scale(1);
+}
+
+.nav-item:hover{
+    transform: scale(1.22);
+}
+
+.contact-list {
+    font-size: 34px;
+    font-weight: bolder;
+    margin-top: 10vh;
+    color: var(--text);
+}
+.c-length {
+    margin: auto;
+    margin-top: 40vh;
+}
+
+.btn {
+    width: 80px;
+    height: 80px;
+    background-color: #fdbd98;
+    background-image: linear-gradient(62deg, #f7ba97 0%, #F7CE68 100%);
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    border-radius: 50%;
+    font-size: 60px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px black;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.btn:hover {
+    background-color: #f0742c;
+    background-image: linear-gradient(62deg, #fd9d6a 0%, #F7CE68 100%);
+}
+
+.btn:active,
+.btn:focus {
+    background-color: #f0742c;
+    background-image: linear-gradient(62deg, #b16e4a 0%, #b19a61 100%);    border: none;
+    outline: none;
+}
